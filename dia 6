@@ -1,0 +1,16 @@
+esse dia foi um joguinho que nos ensinou sobre alguns conceitos importantes
+aq vai o link: https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json
+def direita():
+    turn_left()
+    turn_left()
+    turn_left()
+    
+while not at_goal():
+    if right_is_clear():
+        direita()
+        move()
+    elif front_is_clear():
+        move()
+    else:
+        turn_left()
+     
